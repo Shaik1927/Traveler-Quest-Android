@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".CamelridingActivity">
+
+        <!-- Headings and side headings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="Camel Riding"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Main content layout -->
+        <LinearLayout
+            android:id="@+id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/camel"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:outlineAmbientShadowColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Camelback riding is a recreational and therapeutic activity enjoyed by individuals of all ages and abilities. As a sport, it provides the rider with the opportunity to master the skills necessary to confidently control and steer the Camel through various patterns and obstacles."
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:text="Join Community"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:background="@drawable/custom_edittext"-->
+            <!--                android:backgroundTint="@color/blue"/>-->
+        </LinearLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_below="@id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/coversContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- home table  items will be added here dynamically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Headings and side headings for Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container2"
+            android:layout_below="@id/horizontalScrollView"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container2"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="List "
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="of Tools"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <!-- Headings and side headings for Tools -->
+
+        <!-- List of Camping Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear3"
+            android:orientation="vertical">
+
+            <!-- TREKKING GEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIDING GEAR"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Saddle, saddle pad, and girth
+\n
+2. Stirrup irons and leather
+\n
+3. Grooming tools
+\n
+4. Camel Blanket or sheet
+\n
+5. First aid kit
+\n
+6. Bridle, reins, and bit
+\n
+7. Fly spray"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!-- FOOTWEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOTWEAR"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Non-skid, deep treaded, high-ankle trekking shoes\n\n2. Pair of light-weight Slipper/Sandals"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!-- CLOTHING -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLOTHING"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Riding pants (breeches or jodhpurs)
+\n
+2. Shirt (breathable fabric )
+\n
+3. Boots (tall boots or short paddock boots)
+\n
+4. Half chaps
+\n
+5. Helmet (for equestrians)
+\n
+6. Riding vest (for equestrians)"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

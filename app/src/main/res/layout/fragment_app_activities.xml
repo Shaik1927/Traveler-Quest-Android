@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppActivitiesFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_marginTop="50dp"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:id="@+id/add_top_rate"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/custom_edittext2"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/star"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/custom_edittext2"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:textSize="22sp"
+                android:text="Add Top rated" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:id="@+id/add_activity"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/custom_edittext2"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/sail_ship"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/custom_edittext2"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:textSize="22sp"
+                android:text="Add Activity" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:id="@+id/add_location"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/custom_edittext2"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/locationimg"/>
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/custom_edittext2"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:textSize="22sp"
+                android:text=" Add Location" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

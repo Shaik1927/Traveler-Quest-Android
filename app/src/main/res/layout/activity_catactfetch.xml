@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="270dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/custom_edittext"
+    android:layout_margin="10dp"
+    android:layout_marginTop="20dp"
+    android:outlineSpotShadowColor="@color/blue"
+    android:outlineAmbientShadowColor="@color/blue"
+    tools:context=".MountainActivity">
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/activityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Activity"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

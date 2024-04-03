@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomizeActivitiesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:text="CustomizeActivitiesActivity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="8dp">
+
+            <!-- Table headers -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/blue">
+
+<!--                <TextView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="S.No"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:padding="8dp" />-->
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Name"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Image"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

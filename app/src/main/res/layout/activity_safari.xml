@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".SafariActivity">
+
+        <!-- Headings and side headings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="Safari"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Main content layout -->
+        <LinearLayout
+            android:id="@+id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/safari"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:outlineAmbientShadowColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Many communities and cultures live here. This diversity is also seen in wildlife around the country. A jungle safari is the closest way of experiencing the wildlife of India. So, if you are looking for an adventure trip, read on to know the best places to experience Jungle Safari."
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:text="Join Community"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:background="@drawable/custom_edittext"-->
+            <!--                android:backgroundTint="@color/blue"/>-->
+        </LinearLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_below="@id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/coversContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- home table  items will be added here dynamically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Headings and side headings for Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container2"
+            android:layout_below="@id/horizontalScrollView"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container2"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="List "
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="of Tools"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <!-- Headings and side headings for Tools -->
+
+        <!-- List of Safari Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear3"
+            android:orientation="vertical">
+
+            <!-- SAFARI TOOLS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safari Tools"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Binoculars\n\n2. Field Guide Book\n\n3. Camera with Zoom Lens\n\n4. Hat and Sunscreen\n\n5. Insect Repellent"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

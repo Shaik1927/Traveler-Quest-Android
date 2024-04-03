@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".BunjeejumpingActivity">
+
+        <!-- Headings and side headings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="Bunjee Jumping"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Main content layout -->
+        <LinearLayout
+            android:id="@+id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bunjee"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:outlineAmbientShadowColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Bungee jumping is an action-filled recreational activity that involves head-first jumping from a tall structure with an elastic cord attached into participants' feet. That tall structure can be a building, crane, bridge or even a helicopter."
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:text="Join Community"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:background="@drawable/custom_edittext"-->
+            <!--                android:backgroundTint="@color/blue"/>-->
+        </LinearLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_below="@id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/coversContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- home table  items will be added here dynamically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Headings and side headings for Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container2"
+            android:layout_below="@id/horizontalScrollView"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container2"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="List "
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="of Tools"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <!-- Headings and side headings for Tools -->
+
+        <!-- List of Camping Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear3"
+            android:orientation="vertical">
+
+            <!-- TREKKING GEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bunjee jumping GEAR"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Bunjee body harness
+2. Bunjee bumper pad\n
+3. Bunjee jumper retrival kit\n
+4. Bunjee cord\n
+5. Bunjee jumping helmet\n
+6. Bunjee jumping rigging system\n
+7. Bunjee storage and carry bag\n
+8. Platform\n
+9. pulleys"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!-- FOOTWEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOTWEAR"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Non-skid, deep treaded, high-ankle trekking shoes\n\n2. Pair of light-weight Slipper/Sandals"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!-- CLOTHING -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLOTHING"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. athletic wear\n
+
+2. Jeans\n
+
+3. shorts\n
+
+4. ski jacket\n
+
+5. wet suit if you are over water"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

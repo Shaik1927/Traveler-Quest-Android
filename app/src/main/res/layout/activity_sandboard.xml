@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".SandboardActivity">
+
+        <!-- Headings and side headings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="Sand Boarding"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Main content layout -->
+        <LinearLayout
+            android:id="@+id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sandboard"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:outlineAmbientShadowColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Sandboarding is one of the most popular and most preferred extreme sports in the world. It is done by riding the heaps of sand in the Desert by standing or lying on a surfboard."
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:text="Join Community"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:background="@drawable/custom_edittext"-->
+            <!--                android:backgroundTint="@color/blue"/>-->
+        </LinearLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_below="@id/azam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/coversContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- home table  items will be added here dynamically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+        <!-- Headings and side headings for Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_bar_container2"
+            android:layout_below="@id/horizontalScrollView"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_bar_container2"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="List "
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="of Tools"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </LinearLayout>
+        <!-- Headings and side headings for Tools -->
+
+        <!-- List of Camping Tools -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear3"
+            android:orientation="vertical">
+
+            <!-- TREKKING GEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sandboarding Checklist"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Mask\n
+
+2. The Fins\n
+
+3. The Leash\n
+
+4. The Surf Wax/Traction Pad\n
+
+5. The Sunscreen"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <!-- FOOTWEAR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Optional Surfing Kit"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. The Rash Guard\n
+
+2. The Surf Earplugs\n
+
+3. The Surfboard Bag\n
+
+4. The Boots, Gloves, and Hoods\n
+
+5. The Surf Watch"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLOTHING"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Quick Dry Warm lower or Track Pants\n\n2. Full sleeves T-shirts/ Sweatshirts\n\n3. Pair of thick woolen socks\n\n4. Thermal Body warmer Upper,Lower\n\n5. Undergarments\n\n6. Warm jacket closed at the wrist , neck\n\n7. Full sleeves sweater\n\n8. Rainwear ( Jacket , Pants )\n\n9. Pair of waterproof, warm gloves\n\n10. Woolen cap\n\n11. Sunshielding Hat"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid Kit"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Basic medical supplies for minor injuries.\n
+
+2. Bandages.
+
+3. Spirit
+
+4. cotton"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

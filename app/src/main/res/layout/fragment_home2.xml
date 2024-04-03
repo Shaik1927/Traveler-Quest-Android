@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".HomeFragment2">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Find great places to start adventures or visit from local experts"
+            android:textColor="#B2BEB5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_nocorner"
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/locationEditText"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="Location"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/findLocationButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical|end"
+                android:backgroundTint="@color/blue"
+                android:text="Find location"
+                android:textSize="18sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Or choose your adventures"
+            android:textColor="#B2BEB5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--all the advantue land forms available from here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:rowCount="4"
+                android:columnCount="2"
+                android:layout_margin="5dp"
+                android:alignmentMode="alignMargins"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <!--mountains-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mountain"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mountains"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mountains"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Mountains beckon adventurers with rugged terrain and breathtaking vistas."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--    hills    -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hills"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/hills"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hills"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="The gentle siblings of grand mountains, offer adventurers a captivating terrain."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--  forests      -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/forests"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/forest"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forest"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Forests, vast and mysterious, beckon adventurers with untamed wonders."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--    Desert-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/desert"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/desert"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desert"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Deserts, vast and arid landscapes, offer unique adventure opportunities."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--Canyons-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/canyons"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/canyon"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canyons"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Canyons are nature's thrilling adventure courses, carved by erosive forces."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--marine-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/marine"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/moraine"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moraine"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Moraine are deposits of rock and sediment left from a former or receding glacier"
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--swamps-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/swamp"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/swamp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swamps"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Swamps, mysterious and enchanting, form captivating adventure settings."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--seas-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seas"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sea"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seas"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Seas beckon intrepid explorers with their vast, mysterious expanses."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--terrains-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/terrains"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/terrains"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terrains"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Terrain presents unique challenges, demanding a blend of skill and courage."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--ponds-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ponds"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pond"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ponds"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Ponds, though seemingly tranquil, harbor hidden adventure."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--rivers-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rivers"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/rivers"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rivers"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Rivers, nature's liquid pathways, beckon adventurers with thrilling beauty."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+                <!--amusement -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/amusement"
+                    android:clickable="true"
+                    android:layout_width="165dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_height="200dp"
+
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/amusement"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amusement Parks"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Amusement parks are thrilling adventure zones, brimming with various rides."
+                        android:textColor="#999"
+                        android:textSize="12dp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+
+            android:paddingEnd="16dp"
+            >
+
+
+            <!--            headings and side headings -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trending"
+                    android:textSize="18sp"
+
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Top Rated"
+
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/black"
+                    android:text="Aventures"
+                    android:paddingEnd="20dp"
+                    android:textSize="22sp"
+                    app:cornerRadius="0dp" />
+
+            </LinearLayout>
+            <!--            headings and side headings -->
+
+
+            <!--            scroll horizontally -->
+
+            <!-- dynamic data fetched here -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/coversContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- home table  items will be added here dynamically -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <!--heading -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventures"
+                android:textSize="18sp"
+
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Types "
+
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:textColor="@color/black"
+                android:text="of Aventures"
+                android:paddingEnd="20dp"
+                android:textSize="22sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+        <!--heading -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!--Land adventures -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/land"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+
+                    android:background="@drawable/land"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Land Adventures"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="Very very near, Be ready to explore the Lands and narture!!"
+
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+            <!--    Air adventures     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/water"
+                android:layout_marginTop="30dp"
+
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+
+                    android:background="@drawable/water"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Water Adventures"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="Enjoy with the water, Get ready to wet yourselves in water !!"
+
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+            <!--  water adventures      -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/air"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+
+                    android:background="@drawable/air"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Air Adventures"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="Experice the world from the high sky and Enjoy the thrill!!"
+
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

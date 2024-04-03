@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTopRateActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/blue"
+            android:text="Enter top rated adventures"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:boxBackgroundColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/activityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Activity Name"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                tools:background="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:boxBackgroundColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/ratingEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Rating"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                tools:background="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
