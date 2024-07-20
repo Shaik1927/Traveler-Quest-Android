@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.chatmessenger.fragments.HomeFragment"
+        android:name="com.simats.chatmessenger.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -37,12 +37,12 @@
     </fragment>
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.example.chatmessenger.fragments.ChatFragment"
+        android:name="com.simats.chatmessenger.fragments.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" >
         <argument
             android:name="users"
-            app:argType="com.example.chatmessenger.modal.Users" />
+            app:argType="com.simats.chatmessenger.modal.Users" />
         <action
             android:id="@+id/action_chatFragment_to_homeFragment"
             app:destination="@id/homeFragment"
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.example.chatmessenger.fragments.SettingFragment"
+        android:name="com.simats.chatmessenger.fragments.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" >
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/chatfromHome"
-        android:name="com.example.chatmessenger.fragments.ChatfromHome"
+        android:name="com.simats.chatmessenger.fragments.ChatfromHome"
         android:label="ChatfromHome" >
         <action
             android:id="@+id/action_chatfromHome_to_homeFragment"
@@ -80,6 +80,6 @@
             app:popExitAnim="@anim/slide_out_right"/>
         <argument
             android:name="recentchats"
-            app:argType="com.example.chatmessenger.modal.RecentChats" />
+            app:argType="com.simats.chatmessenger.modal.RecentChats" />
     </fragment>
 </navigation>

@@ -4,7 +4,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.chatmessenger.mvvm.ChatAppViewModel" />
+            type="com.simats.chatmessenger.mvvm.ChatAppViewModel" />
 
 
 

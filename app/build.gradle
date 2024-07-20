@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.chatmessenger'
+    namespace 'com.simats.chatmessenger'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.chatmessenger"
+        applicationId "com.simats.chatmessenger"
         minSdk 24
         targetSdk 34
         versionCode 1

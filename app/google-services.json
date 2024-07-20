@@ -1,21 +1,22 @@
 {
   "project_info": {
-    "project_number": "274947358527",
-    "project_id": "chat-745aa",
-    "storage_bucket": "chat-745aa.appspot.com"
+    "project_number": "906628299260",
+    "firebase_url": "https://travelerquest-3b751-default-rtdb.firebaseio.com",
+    "project_id": "travelerquest-3b751",
+    "storage_bucket": "travelerquest-3b751.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:274947358527:android:c66a40b8eb275206ce9d8a",
+        "mobilesdk_app_id": "1:906628299260:android:90c7b4158779dbfd3c1a79",
         "android_client_info": {
-          "package_name": "com.example.chatmessenger"
+          "package_name": "com.simats.chatmessenger"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDVecnR8Lc0ystFJ4qBtAFPiqDJKkv-CKw"
+          "current_key": "AIzaSyC5BptirRmwPVUcCG8FFSe3jayq6u7_9nY"
         }
       ],
       "services": {
